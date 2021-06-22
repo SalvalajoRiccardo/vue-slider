@@ -15,14 +15,15 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background-color: black;
+    position: relative;
 }
 
 main .prev, main .next {
     font-size: 50px;
     color: white;
     margin: 0 20px;
-
+    
 }
 
 #signpost {
@@ -34,8 +35,16 @@ main .prev, main .next {
     justify-content: space-around;
     align-items: center;
     padding: 10px;
+    position: absolute;
+    bottom: 10px;
 }
 
 #images img {
     width: 100%;
+}
+
+.attivo {
+    background-color: crimson;
+    color: crimson;
+    border-radius: 50%;
 }

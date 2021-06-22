@@ -13,22 +13,22 @@
     <div id="root">
         <!-- inizio navigatore -->
         <main>
-            <div class="prev">
+            <div class="prev" @click='prevAlbum'>
                 <i class="fas fa-caret-left"></i>
+            </div>
+            
+            <div id="covers">
+                <img :src="images[contatore]" alt="album">
             </div>
 
             <nav id="signpost">
-                <i class="fas fa-dot-circle"></i>
-    
+                <i :class="(index == contatore) ? 'attivo' : ''" v-for="(image, index) in images" @click="change(index)"  class="fas fa-dot-circle"></i>
             </nav>
     
-            <div class="next">
+            <div class="next" @click='nextAlbum'>
                 <i class="fas fa-caret-right"></i>
             </div>
     
-            <div id="covers">
-                <img :src="images[0]" alt="">
-            </div>
         </main>
         <!-- fine navigatore -->
     
