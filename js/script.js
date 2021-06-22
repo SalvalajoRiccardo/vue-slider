@@ -5,6 +5,7 @@ var app = new Vue({
         contatore: 0,
         images: ['img/carolus-rex.jpg','img/coat-of-arms.jpg', 'img/heroes.jpg', 'img/the-great-war.jpg', 'img/the-last-stand.jpg']
     },
+
     methods: {
         nextAlbum() {
             
@@ -21,5 +22,9 @@ var app = new Vue({
         change(i) {
             this.contatore = i;
         }
+    },
+
+    mounted() {
+        setInterval(this.nextAlbum, 3000);
     }
 });
