@@ -17,12 +17,12 @@
 
                 
                 <button @click="pause()" id="pause">
-                    <i :class="" class="far fa-pause-circle"></i>
+                    <i :class ="(intervallo == false) ? 'attivo' : '' " class="far fa-pause-circle"></i>
                 </button> 
              
     
                 <button @click="play()" id="play">
-                    <i :class="" class="far fa-play-circle"></i>
+                    <i :class ="(intervallo == true) ? 'attivo' : '' " class="far fa-play-circle"></i>
                 </button>
                 
                 

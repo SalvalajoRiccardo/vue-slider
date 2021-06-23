@@ -27,7 +27,7 @@ var app = new Vue({
 
         play() {
             clearInterval(this.intervallo);
-            this.intervallo = setInterval(this.nextAlbum, 3000);
+            this.intervallo = setInterval(this.nextAlbum, 1000);
         },
 
         pause() {
@@ -37,6 +37,6 @@ var app = new Vue({
     },
 
     mounted() {
-        this.intervallo = setInterval(this.nextAlbum, 3000);
+        this.intervallo = setInterval(this.nextAlbum, 1000);
     }
 });
