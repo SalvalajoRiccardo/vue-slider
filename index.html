@@ -13,6 +13,21 @@
     <div id="root">
         <!-- inizio navigatore -->
         <main>
+            <div id="startstop">
+
+                
+                <button @click="pause()" id="pause">
+                    <i :class="" class="far fa-pause-circle"></i>
+                </button> 
+             
+    
+                <button @click="play()" id="play">
+                    <i :class="" class="far fa-play-circle"></i>
+                </button>
+                
+                
+            </div>
+
             <div class="prev" @click='prevAlbum'>
                 <i class="fas fa-caret-left"></i>
             </div>
