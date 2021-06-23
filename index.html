@@ -14,15 +14,13 @@
         <!-- inizio navigatore -->
         <main>
             <div id="startstop">
-
                 
                 <button @click="pause()" id="pause">
-                    <i :class ="(intervallo == false) ? 'attivo' : '' " class="far fa-pause-circle"></i>
+                    <i @click="status = false" :class ="(status == false) ? 'attivo' : '' " class="far fa-pause-circle"></i>
                 </button> 
-             
     
                 <button @click="play()" id="play">
-                    <i :class ="(intervallo == true) ? 'attivo' : '' " class="far fa-play-circle"></i>
+                    <i @click="status = true" :class ="(status == true) ? 'attivo' : '' " class="far fa-play-circle"></i>
                 </button>
                 
                 

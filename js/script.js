@@ -4,7 +4,8 @@ var app = new Vue({
     data: {
         contatore: 0,
         images: ['img/carolus-rex.jpg','img/coat-of-arms.jpg', 'img/heroes.jpg', 'img/the-great-war.jpg', 'img/the-last-stand.jpg'],
-        intervallo:''
+        intervallo:'',
+        status: true
         
     },
 
@@ -35,6 +36,8 @@ var app = new Vue({
         },
 
     },
+
+    
 
     mounted() {
         this.intervallo = setInterval(this.nextAlbum, 1000);
